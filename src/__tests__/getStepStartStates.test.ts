@@ -48,7 +48,7 @@ test('should throw if "scopes" not provided in execution config', () => {
     partialInstanceConfig: { scopes: undefined },
   });
 
-  delete context.instance.config.scopes;
+  //delete context.instance.config.scopes;
   expect(() => getStepStartStates(context)).toThrowError(
     'Configuration option "scopes" is missing on the integration instance config',
   );
